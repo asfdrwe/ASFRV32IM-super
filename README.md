@@ -24,13 +24,13 @@ is another collection of Single Cycle (not pipelined) In-order SuperScalar RISC-
 	- RV32IM-2mem2 (added second load/store unit and store buffer for sw&lwcombination to RV32IM-2.v for Structural hazards)
 	- RV32IM-2bp (added speculative execution to RV32IM-2.v for Control hazards)
 	- RV32IM-2mof (added Macro Op Fusion(4 idioms: slli+add, add+load, lui+addi, auipc+load) to RV32IM-2.v for Data hazards)
-        - RV32IM-2all (added second mul/div & load/store unit & store buffer & speculative exectuion & Macro Op Fusion for Data hazards and Structural hazards and Control hazards)
+	- RV32IM-2all (added second mul/div & load/store unit & store buffer & speculative exectuion & Macro Op Fusion for Data hazards and Structural hazards and Control hazards)
 - 3-way SuperScalar(5)
 	- RV32IM-3 (which has single mul/div calculator and single load/store unit. It is not superscalared when Data hazards or Structural hazards or Control hazards)
 	- RV32IM-3mul (added second/third mul/div calculator to RV32IM-3.v for Structural hazards)
 	- RV32IM-3mem (added second/third load/store unit to RV32IM-3.v for Structural hazards)
 	- RV32IM-3bp (added speculative execution to RV32IM-3.v for Control hazards)
-        - RV32IM-3all (added second/third mul/div & load/store unit & speculative exectuion & Macro Op Fusion for Data hazards and Structural hazards and Control hazards)
+	- RV32IM-3all (added second/third mul/div & load/store unit & speculative exectuion & Macro Op Fusion for Data hazards and Structural hazards and Control hazards)
 
 ## LICENSE
   ```
@@ -314,8 +314,8 @@ You need [riscv-tests_auto.patch](riscv-tests_auto.patch) for 0 address startup 
 $ patch -p1 < (ASFRV32IM-super dir)/riscv-tests.patch
   ```
 
-- \*.hex in [test](test/) are precompiled and hex format converted riscv-tests for ASFRV32IM.
-- \*.dump in [test](test/) are deassembled riscv-tests programs.
+- \*.hex in [autotest](autotest/) are precompiled and hex format converted riscv-tests for ASFRV32IM.
+- \*.dump in [autotest](autotest/) are deassembled riscv-tests programs.
 
 BUILD
 ```
