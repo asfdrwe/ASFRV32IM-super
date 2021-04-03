@@ -1,0 +1,18 @@
+WARNING: RV32IM-2.v:295: $readmemh(test.hex): Not enough words in the file for the requested range [0:65535].
+INIT
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 2050925
+Total time (secs): 2050
+Iterations/Sec   : 0
+Iterations       : 10
+Compiler version : GCC10.1.0
+Compiler flags   : -O2 -fno-builtin -march=rv32g -mabi=ilp32 -nostdlib -nostartfiles -T barebones/link.ld -DPERFORMANCE_RUN=1  
+Memory location  : STACK
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0xfcaf
+Correct operation validated. See README.md for run and reporting rules.
+FINISH
